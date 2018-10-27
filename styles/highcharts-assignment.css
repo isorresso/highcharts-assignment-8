@@ -1,0 +1,72 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+header {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1{
+  font-family: 'Century Gothic', 'Arial', sans-serif;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Quicksand', 'Century Gothic', 'Arial', sans-serif;
+}
+
+h3{
+  text-align: center;
+  font-family: 'Century Gothic', 'Arial', sans-serif;
+}
+body {
+  margin: 0;
+  background-color: #87cefa;
+}
+
+p {
+  text-align:left;
+  font-family: 'Quicksand', 'Century Gothic', 'Arial', sans-serif;
+  padding: 5rem;
+  line-height: 1.5em;
+}
+
+#container{
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+#container2{
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+
+@media screen and (max-width: 700px) {
+  div{
+    margin: 1rem;
+  }
+
+#container{
+  padding-right: 3rem;
+  padding-left: 1rem;
+}
+
+#container2{
+  padding-right: 3rem;
+  padding-left: 1rem;
+}
+
+h3{
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+p {
+  padding: 2rem;
+  line-height: 1.5rem;
+}
+}

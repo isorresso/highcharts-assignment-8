@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How American Men and Women Spend Their Time</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <link href="styles/highcharts-assignment.css" rel="stylesheet">
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+
+</head>
+<body>
+
+<header>
+<h1>How American Men and Women Spend Their Time</h1>
+<h2>By Isabella Sorresso</h2>
+</header>
+
+
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<div id="container"></div>
+
+<script>
+Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Average Hours Per Day Spent in Selected Activities by Gender'
+    },
+    subtitle: {
+        text: 'Source: United States Department of Labor'
+    },
+    xAxis: {
+        categories: [
+            'Personal care, including sleep',
+            'Eating and drinking',
+            'Household activities',
+            'Purchasing goods and services',
+            'Caring for and helping household members',
+            'Caring for and helping nonhousehold members',
+            'Working and work-related activities',
+            'Educational activities',
+            'Organizational, civic and religious activities',
+            'Leisure and sports',
+            'Telephone calls, mail and email',
+            'Other activities'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Hours'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Males',
+        data: [9.35, 1.22, 1.41, 0.6, 0.36, 0.15, 4.32, 0.52, 0.26, 5.53, 0.11, 0.18]
+
+    }, {
+        name: 'Females',
+        data: [9.81, 1.14, 2.19, 0.83, 0.68, 0.22, 2.89, 0.45, 0.39, 4.98, 0.19, 0.22]
+
+    }]
+});
+</script>
+
+<h3> Source: United States Department of Labor, <a href="https://www.bls.gov/news.release/atus.nr0.htm" target="_blank">American Time Use Survey Summary</a></h3>
+
+<p>According to the United States Department of Labor, in 2017 an American Time Use Survey (ATUS) was conducted and in 2018 the results were released. The data includes the average amount of time per day in 2017 that individuals worked, did household activities, and engaged in leisure and sports activities. Additionally, measures of the average time per day spent providing childcare--both as a primary (or main) activity and while doing other things--for the combined years 2013-17 are provided.</p>
+
+
+<div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<script>
+Highcharts.chart('container2', {
+
+      chart: {
+          type: 'line'
+      },
+      title: {
+          text: 'Average Hours Per Weekday Versus Weekend Day Spent in Selected Activities by Gender'
+      },
+      subtitle: {
+          text: 'Source: United States Department of Labor'
+      },
+      xAxis: {
+          categories: [
+          'Personal care, including sleep',
+          'Eating and drinking',
+          'Household activities',
+          'Purchasing goods and services',
+          'Caring for and helping household members',
+          'Caring for and helping nonhousehold members',
+          'Working and work-related activities',
+          'Educational activities',
+          'Organizational, civic and religious activities',
+          'Leisure and sports',
+          'Telephone calls, mail and email',
+          'Other activities'
+        ]
+      },
+      yAxis: {
+          title: {
+              text: 'Hours'
+          }
+      },
+      plotOptions: {
+          line: {
+              dataLabels: {
+                  enabled: true
+              },
+              enableMouseTracking: false
+          }
+      },
+      series: [{
+          name: 'Average per Weekday (Men)',
+          data: [9.07, 1.15, 1.20, 0.55, 0.35, 0.12, 5.55, 0.65, 0.17, 4.98, 0.11, 0.18]
+      }, {
+          name: 'Average per Weekday (Women)',
+          data: [9.57, 1.06, 2.07, 0.82, 0.74, 0.21, 3.68, 0.58, 0.31, 4.54, 0.20, 0.23]
+      }, {
+          name: 'Average per Weekend Day (Men)',
+          data: [10.0, 1.37, 1.90, 0.71, 0.37, 0.21, 1.51, 0.22, 0.47, 6.95, 0.09, 0.19]
+      }, {
+          name: 'Average per Weekend Day (Women)',
+          data: [10.38, 1.31, 2.49, 0.87, 0.54, 0.24, 1.04, 0.17, 0.59, 6.00, 0.15, 0.22]
+      }]
+  });
+</script>
+
+<h3> Source: United States Department of Labor, <a href="https://www.bls.gov/news.release/atus.nr0.htm" target="_blank">American Time Use Survey Summary</a></h3>
+
+<p>A few of the activities recorded on the survey include working, household activities, leisure activities, caring for household children and several others. The chart above specifically shows the differences between how men and women spend their time during the weekdays versus the weekends. </p>
+
+
+
+</body>
+</html>
